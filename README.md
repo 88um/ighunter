@@ -3,7 +3,7 @@
 
 my favorite script to date
 
-use this tool to find available usernames
+use this tool to find available instagram usernames
 
 add sessions to session file
 
