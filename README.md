@@ -13,4 +13,4 @@ add a list of usernames you want to check and claim in target.txt
 
 run the script with your desired thread count
 
-optional: input your own discord webhook into line 78
+optional: input your own discord webhook into line 113
