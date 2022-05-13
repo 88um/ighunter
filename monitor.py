@@ -124,7 +124,7 @@ class Monitor:
         while True:
             try:response = self.r.post(self.url, headers=head,data=data);break
             except:pass
-        if not response.text.__contains__("username_is_taken") and not response.text.__contains__("username_held_by_others") and response.status_code==200:self.claim()
+        if "username_is_taken" not in response.text and "held_by_others" not in response.text and response.status_code==200:self.claim()
         else:counter.attempts+=1;self.sprint(f'\r[{self.yellow}-{self.reset}] Attempts : {counter.attempts}{self.reset} | R/s : {round(counter.attempts/counter.rs)} | User : {self.username} ', end='',flush=True)
 
     def claim(self):
